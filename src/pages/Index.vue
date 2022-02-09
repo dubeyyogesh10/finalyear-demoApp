@@ -1,10 +1,10 @@
 <template>
   <q-page
-    class="bg-light-green window-height window-width row justify-center items-center"
+    class="bg-light-blue window-height window-width row justify-center items-center"
   >
     <div class="column">
       <div class="row">
-        <h5 class="text-h5 text-white q-my-md">Demo Hospital & Co</h5>
+        <h5 class="text-h5 text-black q-my-md">Demo Hospital & Co</h5>
       </div>
       <div class="row">
         <q-card square bordered class="q-pa-lg shadow-1">
@@ -31,7 +31,7 @@
           <q-card-actions class="q-px-md">
             <q-btn
               unelevated
-              color="light-green-7"
+              color="light-blue-7"
               size="lg"
               class="full-width"
               label="Login"
