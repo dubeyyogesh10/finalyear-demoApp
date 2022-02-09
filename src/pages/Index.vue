@@ -39,7 +39,10 @@
             />
           </q-card-actions>
           <q-card-section class="text-center q-pa-none">
-            <p class="text-grey-6">Not reigistered? Created an Account</p>
+            <p class="text-grey-6">
+              Not reigistered?
+              <button @click="register()">create an Account</button>
+            </p>
           </q-card-section>
         </q-card>
       </div>
@@ -60,13 +63,17 @@ export default {
     const isValidLogin = () => {
       if (email.value === "demo@demo.com" && password.value === "demo") {
         console.log("Login successful");
-        router.push("/register");
+        router.push("/home");
       }
+    };
+    const register = () => {
+      router.push("/register");
     };
     return {
       email,
       password,
       isValidLogin,
+      register,
       toggleLeftDrawer() {
         leftDrawerOpen.value = !leftDrawerOpen.value;
       },
