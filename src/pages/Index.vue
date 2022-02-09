@@ -4,7 +4,7 @@
   >
     <div class="column">
       <div class="row">
-        <h5 class="text-h5 text-white q-my-md">Company & Co</h5>
+        <h5 class="text-h5 text-white q-my-md">Demo Hospital & Co</h5>
       </div>
       <div class="row">
         <q-card square bordered class="q-pa-lg shadow-1">
@@ -40,8 +40,8 @@
           </q-card-actions>
           <q-card-section class="text-center q-pa-none">
             <p class="text-grey-6">
-              Not reigistered?
-              <button @click="register()">create an Account</button>
+              Not registered?
+              <router-link to="/register">create an Account</router-link>
             </p>
           </q-card-section>
         </q-card>
@@ -66,33 +66,15 @@ export default {
         router.push("/home");
       }
     };
-    const register = () => {
-      router.push("/register");
-    };
     return {
       email,
       password,
       isValidLogin,
-      register,
       toggleLeftDrawer() {
         leftDrawerOpen.value = !leftDrawerOpen.value;
       },
     };
   },
-  // data() {
-  //   return {
-  //     email: "",
-  //     password: "",
-  //   };
-  // },
-  // methods: {
-  //   isValidLogin() {
-  //     if (this.email === "demo@demo.com" && this.password === "demo") {
-  //       console.log("Login successful");
-  //       $router.push("/register");
-  //     }
-  //   },
-  // },
 };
 </script>
 

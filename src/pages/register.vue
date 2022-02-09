@@ -62,7 +62,9 @@
             />
           </q-card-actions>
           <q-card-section class="text-center q-pa-sm">
-            <p class="text-grey-6">Return to login</p>
+            <p class="text-grey-6">
+              <router-link to="/">Return to login</router-link>
+            </p>
           </q-card-section>
         </q-card>
       </div>
